@@ -69,17 +69,7 @@
 </head>
 <body class="bg-white text-slate-800">
 
-    <!-- START: Development Image Selector -->
-    <div id="dev-image-selector" style="position: fixed; top: 10px; right: 10px; z-index: 9999; background: white; padding: 10px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-        <label for="image-select" style="color: black; margin-right: 5px;">Banner:</label>
-        <select id="image-select" style="color: black;">
-            <option value="https://source.unsplash.com/1200x800/?modern,house,exterior">Default</option>
-            <option value="home1.jpg">Home 1</option>
-            <option value="home2.jpg">Home 2</option>
-            <option value="home3.jpg">Home 3</option>
-        </select>
-    </div>
-    <!-- END: Development Image Selector -->
+    
 
     <!-- Header & Hero Section -->
     <header class="hero-section text-white">
@@ -380,17 +370,14 @@
         });
 
     </script>
-    <!-- START: Development Image Selector Script -->
+    <!-- START: Random Banner Image Script -->
     <script>
-        const imageSelect = document.getElementById('image-select');
+        const images = ['home1.jpg', 'home2.jpg', 'home3.jpg'];
         const heroSection = document.querySelector('.hero-section');
-
-        imageSelect.addEventListener('change', (event) => {
-            const selectedImage = event.target.value;
-            heroSection.style.backgroundImage = `linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('${selectedImage}')`;
-        });
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        heroSection.style.backgroundImage = `linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('${randomImage}')`;
     </script>
-    <!-- END: Development Image Selector Script -->
+    <!-- END: Random Banner Image Script -->
 
 </body>
 </html>
