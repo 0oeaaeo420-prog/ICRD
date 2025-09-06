@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironclad Rodent Defense | Permanent Rat Exclusion Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('https://placehold.co/1200x800/111827/FFFFFF?text=Ironclad+Protected+Home');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #d97706; /* Amber-600 for a strong accent */
+        }
+        /* Styles for the submission status message box */
+        #status-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        #status-modal.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        #status-modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            max-width: 400px;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        #status-modal.visible #status-modal-content {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- Header & Hero Section -->
+    <header class="hero-section text-white">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block mr-2 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Ironclad Rodent Defense
+            </div>
+            <div>
+                <a href="#contact" class="hidden md:inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-lg cta-button">Get a Free Inspection</a>
+                <a href="tel:555-123-4567" class="md:ml-4 font-bold text-lg">(555) 123-4567</a>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-6 py-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Fortify Your Home. Permanently.</h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8">We build an impenetrable defense against rodents. Our comprehensive exclusion work doesn't just manage the problem—it ends it for good.</p>
+            <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded-lg text-lg cta-button">Schedule Your Inspection Today</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Why Choose Us Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Ironclad Protection. Unmatched Expertise.</h2>
+                    <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Our rigorous approach ensures your home is sealed with industrial-grade precision.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-slate-200 text-slate-800 mx-auto mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Permanent Solutions</h3>
+                        <p class="text-slate-600">We focus on exclusion—sealing your home's entry points to prevent rodents from ever getting back in.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-slate-200 text-slate-800 mx-auto mb-4">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Bay Area Specialists</h3>
+                        <p class="text-slate-600">We understand the unique challenges of Bay Area architecture and the behavior of local roof rats.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-slate-200 text-slate-800 mx-auto mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Modern Techniques</h3>
+                        <p class="text-slate-600">From rat slabbing to industrial-grade sealants, we use the latest materials and methods for maximum effectiveness.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="text-center p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-slate-200 text-slate-800 mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Detailed Craftsmanship</h3>
+                        <p class="text-slate-600">We meticulously inspect and seal every potential entry point, no matter how small, ensuring complete protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Our Comprehensive Defense Services</h2>
+                    <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">A multi-faceted approach to guarantee a rodent-free home.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service 1: Inspection -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-slate-200 service-card">
+                        <h3 class="text-xl font-bold mb-3">1. Full Home & Property Inspection</h3>
+                        <p class="text-slate-600">We conduct a top-to-bottom investigation to identify all current and potential rodent entry points, nesting areas, and damage. This includes the roof, attic, foundation, and crawl spaces.</p>
+                    </div>
+
+                    <!-- Service 2: Sealing -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-slate-200 service-card">
+                        <h3 class="text-xl font-bold mb-3">2. Entry Point Sealing & Barriers</h3>
+                        <p class="text-slate-600">We use rodent-proof materials like steel wool, specialized caulks, and custom metal flashing to seal gaps around pipes, vents, siding, and utility lines—any opening larger than 1/4 inch.</p>
+                    </div>
+
+                    <!-- Service 3: Rat Slabbing -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-slate-200 service-card">
+                        <h3 class="text-xl font-bold mb-3">3. Foundation & Burrow Barriers (Rat Slabbing)</h3>
+                        <p class="text-slate-600">To prevent rats from burrowing under your foundation or deck, we install a trench of wire mesh and concrete. This "rat slabbing" creates an impenetrable underground barrier.</p>
+                    </div>
+
+                    <!-- Service 4: Roof & Vent Proofing -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-slate-200 service-card">
+                        <h3 class="text-xl font-bold mb-3">4. Roof, Eave & Vent Protection</h3>
+                        <p class="text-slate-600">Roof rats are common in the Bay Area. We secure roof vents, junctions, and eaves with heavy-duty screens and materials that rodents can't chew through, blocking their primary highway into your attic.</p>
+                    </div>
+
+                    <!-- Service 5: Crawl Space -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-slate-200 service-card">
+                        <h3 class="text-xl font-bold mb-3">5. Crawl Space Encapsulation & Securing</h3>
+                        <p class="text-slate-600">We secure crawl space vents and access doors, and can provide full encapsulation services to create a clean, dry, and rodent-proof barrier between the ground and your home's structure.</p>
+                    </div>
+
+                    <!-- Service 6: Cleanup -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-slate-200 service-card">
+                        <h3 class="text-xl font-bold mb-3">6. Decontamination & Odor Removal</h3>
+                        <p class="text-slate-600">After securing your home, we offer services to safely remove hazardous droppings, sanitize affected areas, and eliminate odors, restoring your home to a safe and healthy state.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Our Proven 4-Step Process</h2>
+                    <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">A clear path to a permanently protected home.</p>
+                </div>
+                <div class="relative">
+                    <!-- The connecting line -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-200 -translate-y-1/2"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                        <!-- Step 1 -->
+                        <div class="text-center z-10">
+                             <div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-white border-2 border-slate-800 text-slate-800 mx-auto mb-4 font-bold text-2xl">1</div>
+                            <h3 class="text-xl font-semibold mb-2">Inspect</h3>
+                            <p class="text-slate-600">We identify every vulnerability on your property.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="text-center z-10">
+                            <div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-white border-2 border-slate-800 text-slate-800 mx-auto mb-4 font-bold text-2xl">2</div>
+                            <h3 class="text-xl font-semibold mb-2">Seal & Secure</h3>
+                            <p class="text-slate-600">We implement your custom rodent-proofing plan.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="text-center z-10">
+                           <div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-white border-2 border-slate-800 text-slate-800 mx-auto mb-4 font-bold text-2xl">3</div>
+                            <h3 class="text-xl font-semibold mb-2">Clean & Sanitize</h3>
+                            <p class="text-slate-600">We safely remove hazardous waste and odors.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="text-center z-10">
+                            <div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-white border-2 border-slate-800 text-slate-800 mx-auto mb-4 font-bold text-2xl">4</div>
+                            <h3 class="text-xl font-semibold mb-2">Guarantee</h3>
+                            <p class="text-slate-600">We stand by our work, ensuring your peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Service Area Section -->
+        <section class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Proudly Defending Homes Across the Bay Area</h2>
+                 <p class="text-lg text-slate-600 mb-8 max-w-3xl mx-auto">From the Peninsula to the East Bay and beyond, our expert team is ready to protect your property.</p>
+                 <div class="text-slate-700 font-medium space-x-4">
+                    <span>San Francisco</span> &bull;
+                    <span>Oakland</span> &bull;
+                    <span>San Jose</span> &bull;
+                    <span>Fremont</span> &bull;
+                    <span>Hayward</span> &bull;
+                    <span>Berkeley</span> &bull;
+                    <span>Palo Alto</span> &bull;
+                    <span>Marin County</span>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900 text-white">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Ready to Secure Your Home for Good?</h2>
+                    <p class="text-lg text-slate-300 mt-4 max-w-2xl mx-auto">Contact us today for a free, no-obligation inspection and comprehensive quote. Take the first step towards a rodent-free life.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white text-slate-900 rounded-lg shadow-2xl p-8">
+                    <!-- 
+                        UPDATE: The form now has an ID and a modified action attribute.
+                        The 'action' URL needs to be replaced with your personal Formspree URL.
+                    -->
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">How can we help?</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500" placeholder="Tell us about the noises you're hearing or signs you've seen..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" id="submit-button" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg text-lg cta-button">Request My Free Inspection</button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Ironclad Rodent Defense. All Rights Reserved.</p>
+            <p class="mt-2">Your Bay Area Experts in Permanent Rodent Exclusion.</p>
+            <p class="mt-1">Contact us today at (555) 123-4567</p>
+        </div>
+    </footer>
+
+    <!-- Submission Status Modal -->
+    <div id="status-modal">
+        <div id="status-modal-content">
+            <h3 id="status-title" class="text-2xl font-bold mb-2"></h3>
+            <p id="status-message" class="text-slate-600 mb-6"></p>
+            <button id="status-close-button" class="bg-slate-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-slate-700">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for form submission -->
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-button');
+        const modal = document.getElementById('status-modal');
+        const modalTitle = document.getElementById('status-title');
+        const modalMessage = document.getElementById('status-message');
+        const modalCloseButton = document.getElementById('status-close-button');
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.innerHTML = 'Submitting...';
+            submitButton.disabled = true;
+
+            const data = new FormData(event.target);
+            try {
+                const response = await fetch(event.target.action, {
+                    method: contactForm.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    showModal('Success!', 'Thank you for your submission. We will be in touch shortly.');
+                    contactForm.reset();
+                } else {
+                    const responseData = await response.json();
+                    if (Object.hasOwn(responseData, 'errors')) {
+                        const errorMsg = responseData["errors"].map(error => error["message"]).join(", ");
+                        showModal('Error!', `Oops! There was a problem: ${errorMsg}`);
+                    } else {
+                        showModal('Error!', 'Oops! There was a problem submitting your form. Please try again.');
+                    }
+                }
+            } catch (error) {
+                showModal('Error!', 'Oops! There was a problem submitting your form. Please try again.');
+            }
+
+            submitButton.innerHTML = originalButtonText;
+            submitButton.disabled = false;
+        }
+        
+        function showModal(title, message) {
+            modalTitle.textContent = title;
+            modalMessage.textContent = message;
+            modal.classList.add('visible');
+        }
+
+        function hideModal() {
+            modal.classList.remove('visible');
+        }
+
+        contactForm.addEventListener("submit", handleSubmit);
+        modalCloseButton.addEventListener("click", hideModal);
+        // Also allow closing by clicking the background overlay
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+
+    </script>
+</body>
+</html>
+
